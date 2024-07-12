@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="utp.png" />
+
+    <title>ProyectoUTP</title>
+    <link rel="icon" href="utp1.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="index.html" id="rectanguloLink">Dimensiones de un Rectángulo</a></li>
+            <li><a href="rectangulo/rectangulo.html" id="homelink"> Área y Perimetro de un Rectángulo</a></li>
+            <li><a href="triangulo/triangulo_area_perimetro.html" id="trianguloAreaPerimetroLink">+ INFORMACIÓN</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <button class="openbtn" id="openbtn" onclick="toggleSidebar()">☰</button>
+        <div class="container">
+            <img id="utplogo" src="utp.png" alt="UTP_logo">
+            <h1>CALCULANDO DIMENSIONES RECTANGULARES</h1>
+            <p>Conociendo:</p>
+            <form id="inputForm">
+                <label for="area">Área (m²):</label>
+                <input type="number" id="area" name="area" required>
+                <label for="perimeter">Perímetro (m):</label>
+                <input type="number" id="perimeter" name="perimeter" required>
+                <button type="submit">Calcular</button>
+            </form>
+            <h2>PROBLEMA PLANTEADO:</h2>
+            <p class="problema">Calcule las dimensiones del rectangulo conociendo Área y Perímetro</p>
+            <div class="results-container">
+                <img id="rectangleImage" src="cuadrado.jpg" alt="rectangulo_finca">
+                <div class="dimension-results">
+                    <p class="dimensiones1" id="areaResult">Área:</p>
+                    <p class="dimensiones2" id="perimeterResult">Perímetro:</p>
+                </div>
+            </div>
+            
+            <h3>FÓRMULA GENERAL</h3>
+            <img id="formulaImage" src="formula.jpg" alt="Fórmula General">
+            <div id="results" class="hidden">
+                <h3>RESULTADOS:</h3>
+                <p id="areaResult"></p>
+                <p id="perimeterResult"></p>
+                <p id="quadraticFormula"></p>
+                <p id="quadraticFormula1"></p>
+                <p id="terms"></p>
+                <p id="discriminantResult"></p>
+                <h3>Pasos de la solución:</h3>
+                <ol id="steps"></ol>
+                <h3>SOLUCIONES DE "X":</h3>
+                <p id="solution1"></p>
+                <p id="solution2"></p>
+                <h3>CONCLUSIÓN:</h3>
+                <p id="conclusion"></p>
+            </div>            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
