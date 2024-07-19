@@ -204,3 +204,7 @@ button:hover {
 .hidden {
     display: none;
 }
+.solucionesdex{
+    color: red;
+    font-size: 30px;
+}
